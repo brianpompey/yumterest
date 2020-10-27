@@ -5,3 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+lasagna = RecipePin.create(
+            title: "Lasagna",
+            description: "Cheesy and good",
+            category: "pasta",
+            recipe_link: "lasagna.com"
+        )
+
+        lasagna.image.attach(io: File.open("app/assets/Lasagna-FEATURE.jpg"), filename: "lasagna.png")

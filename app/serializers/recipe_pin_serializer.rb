@@ -1,4 +1,4 @@
 class RecipePinSerializer
   include FastJsonapi::ObjectSerializer
-  attributes 
+  attributes  :id, :title, :description, :category, :recipe_link
 end
